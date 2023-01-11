@@ -123,7 +123,7 @@
     music li ul li {
         color: #000659;
         float: none;
-        width: 100%;
+        width: 150%;
         font-family: 'Josefin Sans';
         transition-property:color,background-color;
         transition-duration: 0.3s;
