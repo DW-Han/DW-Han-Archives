@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Cantata One');
+    html,body{
+        height: 100%;
+        
+    }
+    #toc{
+        margin: auto;
+        font-family: 'Cantata One';
+        height: 100%;
+    }
+    #toc div {
+        font-size: 40px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    RA{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    item{
+        text-align: center;
+        font-family: 'Cantata One';
+        font-size: 25px;
+    }
+    #toTop{
+        cursor: pointer;
+        font-family: 'Cantata One';
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        background-color:black;
+        font-size: 20px;
+        font-weight: bold;
+        position: fixed;
+        display: none;
+        right: 30px;
+        top: 30px;
+    }
+    
+    a:link, a:visited {
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        color: royalblue;
+        font-size: 22px;
+    }
+        
+</style>
+<top id="toTop" onclick="goToTop()">
+    Top
+</top>
+<body>
+    <div id="toc">
+        <div>
+            <p>Table of Contents</p>
+        </div>
+        <RA>
+            Real Analysis
+        </RA>
+        <hw><br>
+            <a href="#hw3"> Week 3: Axiomatic introduction to the ordered fields  Q and R.</a> <br>
+            <a href="#hw4"> Week 4: Elementary inequalities.</a><br>
+            <a href="#hw5">Week 5: The Completeness Axiom for R; Archimedean Property of R; Q is dense in R; R\Q is dense in R.</a><br>
+            <a href="#hw6">Week 6: Q is countably infinite; decimal expansions; R is uncountable.</a><br>
+            <a href="#hw7">Week 7: Sequences and an introduction to series; the geometric series; limits; Limit Laws.</a><br>
+            <a href="#hw8">Week 8: The Monotone Convergence Theorem.</a><br>
+            <a href="#hw9">Week 9: The Bolzano-Weierstrass Theorem.</a><br>
+            <a href="#hw10">Week 10: Cauchy sequences.</a><br>
+            <a href="#hw11">Week 11: Defintion of e and represenation of real numbers</a><br><br>
+
+            <a href="#termPaper">Term Paper</a>
+        </hw>
+        
+    </div>
+
+    <div id="HW">
+        <item id="hw3" >
+            <p>Assignment 3</p> 
+            <div style=" margin-bottom: 10%;">
+                <iframe src="413_HW_3.pdf#toolbar=0" width="80%" height="800px" ></iframe>
+            </div>
+        </item>
+
+        <item id="hw4" >
+            <p>Assignment 4</p> 
+            <div style=" margin-bottom: 10%;">
+                <iframe src="413_HW_4.pdf#toolbar=0" width="80%" height="800px" ></iframe>
+            </div>
+        </item>
+
+        <item id="hw5" >
+            <p>Assignment 5</p> 
+            <div style=" margin-bottom: 10%;">
+                <iframe src="413_HW_5.pdf#toolbar=0" width="80%" height="800px" ></iframe>
+            </div>
+        </item>
+
+        <item id="hw6" >
+            <p>Assignment 6</p> 
+            <div style=" margin-bottom: 10%;">
+                <iframe src="413_HW_6.pdf#toolbar=0" width="80%" height="800px" ></iframe>
+            </div>
+        </item>
+
+        <item id="hw7" >
+            <p>Assignment 7</p> 
+            <div style=" margin-bottom: 10%;">
+                <iframe src="413_HW_07.pdf#toolbar=0" width="80%" height="800px" ></iframe>
+            </div>
+        </item>
+
+        <item id="hw8" >
+            <p>Assignment 8</p> 
+            <div style=" margin-bottom: 10%;">
+                <iframe src="413_HW_8.pdf#toolbar=0" width="80%" height="800px" ></iframe>
+            </div>
+        </item>
+
+        <item id="hw9" >
+            <p>Assignment 9</p> 
+            <div style=" margin-bottom: 10%;">
+                <iframe src="413_HW_9.pdf#toolbar=0" width="80%" height="800px" ></iframe>
+            </div>
+        </item>
+
+        <item id="hw10" >
+            <p>Assignment 10</p> 
+            <div style=" margin-bottom: 10%;">
+                <iframe src="413_HW_10.pdf#toolbar=0" width="80%" height="800px" ></iframe>
+            </div>
+        </item>
+
+        <item id="hw11" >
+            <p>Assignment 11</p> 
+            <div style=" margin-bottom: 10%;">
+                <iframe src="413_HW_11.pdf#toolbar=0" width="80%" height="800px" ></iframe>
+            </div>
+        </item>
+
+        <item id="termPaper" >
+            <p>Term Paper</p> 
+            <div style=" margin-bottom: 10%;">
+                <iframe src="Term_Paper.pdf#toolbar=0" width="80%" height="800px" ></iframe>
+            </div>
+        </item>
+        
+    </div>
+    <script>
+        var mybutton = document.getElementById("toTop");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function goToTop(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
