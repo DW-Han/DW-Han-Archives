@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Faustina&family=Nanum+Myeongjo&family=Roboto+Slab:wght@300&family=Rye&family=Vidaloka&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cascadia-code');
+@import url('https://fonts.googleapis.com/css?family=Cantata One');
+@import url('https://fonts.googleapis.com/css?family=Bubbler One');
+@import url('https://fonts.googleapis.com/css?family=Josefin Sans');
+
+.parallaxTitle {
+    line-height: 300px;
+    height: 50%;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.description{
+    height:fit-content;
+    background-color:rgb(14, 0, 93);
+    font-family: 'Josefin Sans', serif;
+    font-size:20px;
+    padding: 50px 20px 50px 20px;
+    color: #f1dac4;
+    border: 10px groove rgba(11, 52, 158, 0.712);
+    border-left: none;
+    border-right: none;
+}
+.highlight{
+    color: #0ba7ef;
+    font-weight: bold;
+    font-size: 22;
+}
+.description a{ 
+    color: #efdc4f;
+}
+.description a:hover{
+    font-weight: bolder;
+    font-size: 20.5px;
+    color: #009ee8;
+    text-decoration:none;
+}
+.title{
+    cursor:cell;
+    text-shadow: 2px 1px #096cbddc; 
+    color: #000659;
+    background-color: #f1dac4;
+    border: 5px ridge #e8d2bfe5;
+    
+    padding: 10px;
+    font-family:'Cantata One';
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    transition-property:color,text-shadow;
+    transition-duration: 0.7s;
+    transition-timing-function:cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+.title:hover{
+    
+    color: #009ee8;
+    text-shadow: 3px 3px #085390ea; 
+}
+#p1{
+    height: 59%;
+    line-height: 59vh;
+    background-image: url('images/math.png');
+}
+#p2{
+    height: 66%;
+    line-height: 66vh;
+    background-image: url('images/music.png');
+}
+#p3{
+    height: 75%;
+    line-height: 75vh;
+    background-image: url('images/writing2.png');
+}
+#p4{
+    height: 60%;
+    line-height: 70vh;
+    background-image: url('images/code.png');
+    
+}
+#p5{
+    height: 60%;
+    background-image: url('banner.png');
+}
+#codeTitle{
+    text-shadow: 2px 1px #939193; 
+    color: #dc6d05;
+    font-family:'Cascadia Code', sans-serif; 
+    font-size: 40px;
+    font-weight: bold;
+    background-color:#0D1117;
+    padding: 10px;
+
+    transition-property:color,text-shadow;
+    transition-duration: 0.7s;
+    transition-timing-function:cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+#codeTitle:hover{
+    color:#0fdae8;
+    text-shadow:3px 4px #d827f0e0;
+    cursor:cell;
+    
+}
+#aboutMeTitle{
+    background-color: white;
+    border: 5px groove #ffffffe5;
+    font-family: 'Cantata One',sans-serif;
+    font-weight:bolder;
+    padding: 20px;
+    font-size: 70px;
+}
+#resumeDiv{
+    cursor:pointer;
+}
+#resume:hover{
+    transform: scale(1.06);
+}
+#aboutMeText{
+    font-size: 20px;
+    color:#000659;
+}
+#socialLinks a{
+    margin: 10px;
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <link rel="icon" href="H.PNG">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faustina&family=Nanum+Myeongjo&family=Roboto+Slab:wght@300&family=Vidaloka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" >
+    <link rel="stylesheet" href="parallax.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBRARY OF D.W. HAN</title>
+
+    
+</head>
+<style>
+    .blink_me {
+        animation: blinker 1s linear infinite;
+      }
+      
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+     
+    }
+</style>
+
+<audio id="track1" src="sound/music/keyboard.mp3"></audio>
+<audio id="track2" src="sound/music/keyboard.mp3"></audio>
+<audio id="track3" src="sound/music/keyboard.mp3"></audio>
+
+
+<button onclick="goToTop();wooshUp();" id="toTop">&#9650 Top</button>
+
+<music >
+    <ul class="cf">
+    
+        <li><a id="musicMenu" style="font-size: 50px;">&#119135 &#119101</a>
+            <ul>
+                <li id= "musicMenu" onclick="playMusic(1)">&nbsp;&nbsp;Chilly Town Track</li>
+                <li onclick="playMusic(2)">&nbsp;&nbsp;Sunny Path Track</li>
+                <li onclick="playMusic(3)">&nbsp;&nbsp;Sand Town Track</li>
+            </ul>
+        </li>
+    </ul>
+</music>
+
+
+<header>
+    <div id = "firstName" class="name" style="font-size: 220px;" onclick="changeName();deleateName();">
+        <t>D</t><t>I</t><t>N</t><t>G</t><t> </t><t>W</t><t>E</t><t>N</t><span id= "blink" class="blink_me">|</span>
+    </div>
+
+    <div id="lastName" class="name" onclick="deleateName();changeName()">
+        <l>H</l><l>A</l><l>N</l>
+    </div>
+
+    
+</header>
+
+<div id="clickMe"></div>
+
+<div id="navMenu">
+    <span id="navMenuButton">Navigation Menu</span>
+</div>
+
+<div id="border"></div>
+
+<menu>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <p id="modalText">LEARN ABOUT ME</p>
+            
+            <span>
+                <a class="menuButton" onclick="wooshDown()" href="#p1"> 
+                    Math
+                </a>
+    
+                <a class="menuButton" onclick="wooshDown()" href="#p2"> 
+                    Music
+                </a>
+    
+                <a class="menuButton" onclick="wooshDown()" href="#p3"> 
+                    Writing
+                </a>
+    
+                <a class="menuButton" onclick="wooshDown()" href="#p4"> 
+                    Computer Science
+                </a>
+
+                <a class="menuButton" onclick="wooshDown()" href="#p5"> 
+                    About Me
+                </a>
+            </span>
+            
+        
+        </div>
+  
+    </div>
+    <!--
+    <button onclick="deleateName();changeName();">changetext</button>
+    <button onclick="reset();deleateName(); ">deleate</button>
+    <button onclick="reset();writeName();">write name</button>
+    <button onclick="tick();">tick</button>
+    --> 
+    <!--<a id ="Museum" href="Museum.html" target="_blank"></a>
+    <a id = "Gallary" href="Gallary.html" target="_blank"></a>
+    <a id = "Writing" href="Writing.html" target="_blank"></a>-->
+
+
+</menu>
+<body style="margin:0px"> 
+    <!--Math Section-->
+    <div id= "p1" class="parallaxTitle">
+        <span class="title" >
+            I like Proofs
+        </span> 
+    </div>
+    <div class="description" >
+        Proofs provide a rigorous and accessible means of evidence to which we can explore, share, and uncover the 
+        fundamental truths of logic and numbers. We may have an intuitive understanding that something is true, but 
+        a proof provides undeniable justification that conjecture indeed holds, and by writing proofs, we are able to 
+        share our findings with colleagues, preserve them for future mathematicians, and allow for the progress for more 
+        advanced mathematics by adding to the set of theorems that can be used in proofs. Proofs are the instrument 
+        and the building blocks in which we can explore the beauty of mathematical truth and allow us to uncover and definitely 
+        test such truths. I have tutored math for the University of Pittsburgh and I am personally intrested in general and analytic topology and partial differential equations.
+        <a href="subpages\math\math.html" target="_blank">
+            Here are some of my write ups for proofs in my classes in <span style="color: #ffffff;font-family:'Cantana One';">LaTeX</span> 
+        </a>.
+    </div>
+
+    <!--Music Section-->
+    <div  id= "p2" class="parallaxTitle">
+        <span class="title" >
+            &#9835 I Compose &#9835
+        </span> 
+    </div>
+    <div class="description" >
+        I loved video games growing up, and the soundtracks of which made the game come to life, and I was inspired my some more recent 
+        games like Stardew Valley, Hollow Knight, and Animal Crossing to compose some music of my own.  
+        <span class="highlight">The top left hand corner you can listen to three tracks</span> 
+        I wrote while you explore the site and learn more about me. The music I write have specific levels and 
+        setting in mind; the first track is themed around a snowy town, the second a sunny valley, and the third a barren desert. 
+        <span class="highlight">Click on the track name to play it, clicking again to pauses it or click on a new track.</span> 
+    </div>
+
+    <!--Writing Section-->
+    <div id= "p3" class="parallaxTitle" >
+        <span class="title" >
+            I Write
+        </span> 
+    </div>
+    <div class="description" >
+        If I couldn't code I would write philosophy books. I am interested in Semiotics, Lacanianism, and Ontology, 
+        but I also like modern anthropology and ancient poetry. 
+        <a href="subpages\writing\writing.html" target="_blank">
+            I have short papers on some of these topics here
+        </a>.  
+    </div>
+
+    <!--Coding!-->
+    <div id= "p4" class="parallaxTitle"> 
+    <span id= "codeTitle">
+        I Code!
+    </span> 
+    </div>
+
+    <div  class="description" style="border-style: none;background-color:#0D1117;font-size:20px;color:rgba(210, 210, 210, 0.826); font-family:'Cascadia Code', sans-serif; ">
+        /* I started as a mathematics major, but as I delved deeper into more and more CS classes I feel in love with the direct application 
+       of logic and creation of programs which pure mathematics lacked.*/<br><br>
+       // I have learned and coded in Java for 4+ years<br>
+       // I have done many personal projects in C#<br>
+       // I am a TA for Data Structures and Algorithms<br>
+       // Won a Hackathon for Oridnary Differential Equaltion solution grapher
+    </div>
+
+    <div id="p5" class="parallaxTitle">
+        <div>
+            <span id="aboutMeTitle">
+                About Me
+            </span>
+        </div>
+        
+    </div>
+    <div>
+        
+    </div>
+    <div class="description" style="height:70vh;position:relative">
+        <div style="text-align: center; float: left; margin-left: 20px;">
+            <span style="font-size: 40px;">
+                Résumé
+            </span>
+            <div id="resumeDiv" style="margin-top: 10px; margin-bottom: 10px;">
+                <img id="resume" src="resume.png" style="width: 20vw; height: 55vh;">
+            </div>
+            Click to Zoom
+        </div>
+        
+        <div style="top: 10vh; left: 33vw; position: absolute; width: 500px;">
+
+            <div style="text-align: center; margin-bottom: 15px; font-size: 30px; font-weight: bolder;">
+                Hey, I'm Kenny
+            </div>
+            
+            <div style="background-color: #dbc2ac; padding: 10px; border: 8px ridge #e8d2bfe5;">
+                <span id="aboutMeText">
+                    <div style="text-align: center;">
+                        I am a 2nd year studying 
+                        <span style="color: rgb(0, 174, 255); font-family: 'Cantata One';">Mathematics</span> 
+                        and 
+                        <span style="color:#0D1117; font-family: 'Cascadia Code'; font-weight: bold;">Computer Science </span> 
+                        major at the<br>
+                        <img src="pittLogo.png" style="height:50px">
+                    </div>
+                    <br> 
+
+                    I was born in 
+                    <yellow>C</yellow><red>h</red><yellow>i</yellow><red>n</red><yellow>a</yellow>,
+                    grew up in 
+                    <lRed>C</lRed><white>a</white><lRed>n</lRed><white>a</white><lRed>d</lRed><white>a</white>
+                    , and moved to the 
+                    <blue>U</blue>.<white>S</white>.<red>A</red>.
+                     when I was in middle school. <br> <br> 
+                    I love 
+                    <span id="creating">creating</span> new things, being the driving force behind my desire to learn; I love writing about new ideas, coding applications 
+                    that solve practical issues, and diving into differents forms of Art. Currently in my free I am trying to learn music theory 
+                    and getting better at writing music.<br> <br> 
+                    My favorite color is <span id="favColor">blue</span>. 
+                </span>
+                
+            </div>
+            <div id="aCeating"></div>
+            <div id="resumeModal" class="resume-Modal">
+
+                <!-- Modal content -->
+                <div class="resume-modal-content">
+                  <span class="closeResume">&times;</span>
+                  <img src="resume.png" style="width:800px;height: 1100px;">
+                </div>
+              
+            </div>
+            
+            
+        </div>
+
+        <img src="me.png" style="top:25vh; right: 8vw; position: absolute;";>
+
+        <div id="socialLinks" style="bottom: 8vh; right: 6vw; position: absolute; ">
+        
+            <a href = "mailto:kenny.x.han@gmail.com" >
+                <i class="fa fa-envelope" style="font-size:36px"></i>
+            </a>
+
+            <a href="https://github.com/DW-Han" target="_blank">
+                <i class="fa fa-github" style="font-size:40px"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/kenny-han-4935a7166/" target="_blank">
+                <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+            </a>
+        </div>
+
+        
+    </div>
+</body>
+
+<footer >
+    <div>   
+         &#169 Ding Wen Han. All rights reserved.
+    </div>
+</footer>
+
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<script src="menu.js"></script>
+<script src="script.js"></script>
+
+</html>

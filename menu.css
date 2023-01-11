@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Cantata One');
+@import url('https://fonts.googleapis.com/css?family=Bubbler One');
+@import url('https://fonts.googleapis.com/css?family=Barrio');
+@import url('https://fonts.googleapis.com/css?family=Josefin Sans');
+@import url('https://fonts.googleapis.com/css2?family=Faustina&family=Nanum+Myeongjo&family=Roboto+Slab:wght@300&family=Rye&family=Vidaloka&display=swap');
+#navMenu{
+    height: 130px;
+    font-family: "Bubbler One";
+    font-size: 60px;
+    margin:54px 0px 0px 0px;
+    font-weight: bolder;
+    text-align: center;
+}
+#navMenu span{
+    cursor: pointer;
+    padding: 10px;
+    width: 200px;
+    border: 5px outset rgb(0, 46, 162);
+    color: #f1dac4;
+    background-color: rgba(12, 14, 132, 0.872);
+    text-shadow: 2px 2px #000000; 
+
+    transition-property:color,text-shadow,color;
+    transition-duration: 0.3s;
+    transition-timing-function:cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+#navMenu span:hover{
+    border: 5px inset rgb(0, 34, 170);
+    text-shadow: 7px 5px #000000;
+    color: #ffe394;
+    background-color: rgba(9, 10, 99, 0.872);
+}
+#navMenu span:active{
+    border: 5px inset rgb(1, 24, 114);
+    color: #b0a383;
+    text-shadow: 2px 2px #000000;
+    background-color: rgba(0, 1, 49, 0.872);
+}
+
+#border{
+    border: 4px solid rgb(11, 2, 151);
+    background-color: rgb(15, 15, 141);
+    height: 10px;
+}
+#modalText{
+  padding-top: 20px;
+  font-size: 35px;
+  text-align: center;
+  font-family:'Josefin Sans';
+  text-shadow: 1px 2px 1px #827878;
+  color: #000000;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 90px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    font-weight: bolder;
+    color: #ffcf4b;
+    font-family:"Cantata One";
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    font-size: 30px;
+    margin: auto;
+    padding-left: 50px;
+    padding-bottom: 70px;
+    width: 90%;
+  }
+  
+  /* The Close Button */
+.close {
+    color: #767676;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+.close:hover,.close:focus {
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+  }
+  
+menu{
+    font-family: "Bubbler One";
+    font-weight: bolder;
+    font-size:25px;
+}
+menu a:link, menu a:visited {
+    text-decoration: none;
+    background-color: rgba(15, 58, 169, 0.872);
+    border: 6px outset rgb(10, 88, 191);
+
+    text-shadow: 3px 2px #514628;
+    color: #ffe394;
+    display:flexbox;
+    padding: 10px;
+    margin: 20px;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+
+    transition-property:color,text-shadow;
+    transition-duration: 0.5s;
+    transition-timing-function:ease-in;
+}
+menu a:hover {
+    text-shadow: 2px 2px #ffcf4b;
+    border-style: inset;
+    color: #f0dca3;
+    font-size: 30px;
+}
+menu a:active{
+    background-color: rgba(16, 49, 133, 0.813);
+    color: rgba(13, 76, 159, 0.911);
+    border: 5px solid #fff3d2;
+    
+}
