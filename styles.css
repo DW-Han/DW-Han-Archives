@@ -212,13 +212,13 @@
         position: absolute;
         top: vh;
         right: 19vw;
-        color: rgb(9, 21, 88);
+        color: rgb(230, 0, 0);
         font-size: 250%;
         font-weight: bold;
       }
       
     .closeResume:hover,.closeResume:focus {
-        color: #be1111;
+        color: #06095b;
         cursor: pointer;
       }    
      
