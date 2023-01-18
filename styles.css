@@ -141,25 +141,35 @@
     .cf:after {
         clear: both;
     }
-
+    header{
+        height: 45%;
+    }
+    headerBot{
+        height: 45%;
+    }
+    #border{
+        border: 2% solid rgb(11, 2, 151);
+        background-color: rgb(15, 15, 141);
+        height: 5%;
+    }
     #clickMe{
-        height: 20px;
-        margin: auto;
+        height: 8%;
+        margin-top: 10%;
         font-family: "Cantata One";
         text-align: center;
     }
     #lastName{
-        height: 150px;
+        height: 100%;
         font-weight: bolder;
         font-family: "Cantata One";
-        font-size: 120px;
-        margin-bottom: 20px;
+        font-size: 730%;
+        margin-bottom: 1%;
         color: rgb(6, 11, 94);
     }
     .name{
         margin: auto;
         color:rgb(7, 1, 22);
-        font-size: 220px;
+        font-size: 1400%;
         font-family: 'Bubbler One', serif;
         font-weight:450;
         background-color: rgba(255, 38, 0, 0);
@@ -175,14 +185,14 @@
     
     t:hover{
         cursor: pointer;
-        font-size: 220px;
+        font-size: 100%;
         font-family: 'Barrio', cursive;
         font-weight:bold;
         color:rgb(14, 1, 1);
     }
     l:hover{
         cursor: pointer;
-        font-size: 125px;
+        font-size: 100%;
         font-family: 'Rye', cursive;
         font-weight:bold;
         color:rgb(29, 8, 113);

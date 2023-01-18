@@ -164,10 +164,13 @@ function close(){
 
     
 typewriter.typeString('Hover and click on my name!')
-    .pauseFor(1000)
+    .pauseFor(500)
+    .deleteAll()
+    .typeString('Made in pure HTML, CSS, JS!')
+    .pauseFor(500)
     .deleteAll()
     .typeString('Call me Kenny!')
-    .pauseFor(1000)
+    .pauseFor(500)
     .start();
 
     

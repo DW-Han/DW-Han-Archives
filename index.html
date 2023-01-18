@@ -52,7 +52,7 @@
 
 
 <header>
-    <div id = "firstName" class="name" style="font-size: 220px;" onclick="changeName();deleateName();">
+    <div id = "firstName" class="name" onclick="changeName();deleateName();">
         <t>D</t><t>I</t><t>N</t><t>G</t><t> </t><t>W</t><t>E</t><t>N</t><span id= "blink" class="blink_me">|</span>
     </div>
 
@@ -63,12 +63,15 @@
     
 </header>
 
-<div id="clickMe"></div>
+<headerBot>
+    <div id="clickMe"></div>
 
-<div id="navMenu">
-    <span id="navMenuButton">Navigation Menu</span>
-</div>
-
+    <div id="navMenu">
+        <span id="navMenuButton">Navigation Menu</span>
+    </div>
+    
+    
+</headerBot>
 <div id="border"></div>
 
 <menu>
@@ -81,6 +84,10 @@
             <p id="modalText">LEARN ABOUT ME</p>
             
             <span>
+                <a class="menuButton" onclick="wooshDown()" href="#p5"> 
+                    About Me
+                </a>
+
                 <a class="menuButton" onclick="wooshDown()" href="#p1"> 
                     Math
                 </a>
@@ -97,9 +104,6 @@
                     Computer Science
                 </a>
 
-                <a class="menuButton" onclick="wooshDown()" href="#p5"> 
-                    About Me
-                </a>
             </span>
             
         
@@ -119,70 +123,6 @@
 
 </menu>
 <body style="margin:0px"> 
-    <!--Math Section-->
-    <div id= "p1" class="parallaxTitle">
-        <span class="title" >
-            I like Proofs
-        </span> 
-    </div>
-    <div class="description" >
-        Proofs provide a rigorous and accessible means of evidence to which we can explore, share, and uncover the 
-        fundamental truths of logic and numbers. We may have an intuitive understanding that something is true, but 
-        a proof provides undeniable justification that conjecture indeed holds, and by writing proofs, we are able to 
-        share our findings with colleagues, preserve them for future mathematicians, and allow for the progress for more 
-        advanced mathematics by adding to the set of theorems that can be used in proofs. Proofs are the instrument 
-        and the building blocks in which we can explore the beauty of mathematical truth and allow us to uncover and definitely 
-        test such truths. I have tutored math for the University of Pittsburgh and I am personally intrested in general and analytic topology and partial differential equations.
-        <a href="subpages\math\math.html" target="_blank">
-            Here are some of my write ups for proofs in my classes in <span style="color: #ffffff;font-family:'Cantana One';">LaTeX</span> 
-        </a>.
-    </div>
-
-    <!--Music Section-->
-    <div  id= "p2" class="parallaxTitle">
-        <span class="title" >
-            &#9835 I Compose &#9835
-        </span> 
-    </div>
-    <div class="description" >
-        I loved video games growing up, and the soundtracks of which made the game come to life, and I was inspired my some more recent 
-        games like Stardew Valley, Hollow Knight, and Animal Crossing to compose some music of my own.  
-        <span class="highlight">The top left hand corner you can listen to three tracks</span> 
-        I wrote while you explore the site and learn more about me. The music I write have specific levels and 
-        setting in mind; the first track is themed around a snowy town, the second a sunny valley, and the third a barren desert. 
-        <span class="highlight">Click on the track name to play it, clicking again to pauses it or click on a new track.</span> 
-    </div>
-
-    <!--Writing Section-->
-    <div id= "p3" class="parallaxTitle" >
-        <span class="title" >
-            I Write
-        </span> 
-    </div>
-    <div class="description" >
-        If I couldn't code I would write philosophy books. I am interested in Semiotics, Lacanianism, and Ontology, 
-        but I also like modern anthropology and ancient poetry. 
-        <a href="subpages\writing\writing.html" target="_blank">
-            I have short papers on some of these topics here
-        </a>.  
-    </div>
-
-    <!--Coding!-->
-    <div id= "p4" class="parallaxTitle"> 
-    <span id= "codeTitle">
-        I Code!
-    </span> 
-    </div>
-
-    <div  class="description" style="border-style: none;background-color:#0D1117;font-size:20px;color:rgba(210, 210, 210, 0.826); font-family:'Cascadia Code', sans-serif; ">
-        /* I started as a mathematics major, but as I delved deeper into more and more CS classes I feel in love with the direct application 
-       of logic and creation of programs which pure mathematics lacked.*/<br><br>
-       // I have learned and coded in Java for 4+ years<br>
-       // I have done many personal projects in C#<br>
-       // I am a TA for Data Structures and Algorithms<br>
-       // Won a Hackathon for Oridnary Differential Equaltion solution grapher
-    </div>
-
     <div id="p5" class="parallaxTitle">
         <div>
             <span id="aboutMeTitle">
@@ -271,6 +211,71 @@
 
         
     </div>
+    <!--Math Section-->
+    <div id= "p1" class="parallaxTitle">
+        <span class="title" >
+            I like Proofs
+        </span> 
+    </div>
+    <div class="description" >
+        Proofs provide a rigorous and accessible means of evidence to which we can explore, share, and uncover the 
+        fundamental truths of logic and numbers. We may have an intuitive understanding that something is true, but 
+        a proof provides undeniable justification that conjecture indeed holds, and by writing proofs, we are able to 
+        share our findings with colleagues, preserve them for future mathematicians, and allow for the progress for more 
+        advanced mathematics by adding to the set of theorems that can be used in proofs. Proofs are the instrument 
+        and the building blocks in which we can explore the beauty of mathematical truth and allow us to uncover and definitely 
+        test such truths. I have tutored math for the University of Pittsburgh and I am personally intrested in general and analytic topology and partial differential equations.
+        <a href="subpages\math\math.html" target="_blank">
+            Here are some of my write ups for proofs in my classes in <span style="color: #ffffff;font-family:'Cantana One';">LaTeX</span> 
+        </a>.
+    </div>
+
+    <!--Music Section-->
+    <div  id= "p2" class="parallaxTitle">
+        <span class="title" >
+            &#9835 I Compose &#9835
+        </span> 
+    </div>
+    <div class="description" >
+        I loved video games growing up, and the soundtracks of which made the game come to life, and I was inspired my some more recent 
+        games like Stardew Valley, Hollow Knight, and Animal Crossing to compose some music of my own.  
+        <span class="highlight">The top left hand corner you can listen to three tracks</span> 
+        I wrote while you explore the site and learn more about me. The music I write have specific levels and 
+        setting in mind; the first track is themed around a snowy town, the second a sunny valley, and the third a barren desert. 
+        <span class="highlight">Click on the track name to play it, clicking again to pauses it or click on a new track.</span> 
+    </div>
+
+    <!--Writing Section-->
+    <div id= "p3" class="parallaxTitle" >
+        <span class="title" >
+            I Write
+        </span> 
+    </div>
+    <div class="description" >
+        If I couldn't code I would write philosophy books. I am interested in Semiotics, Lacanianism, and Ontology, 
+        but I also like modern anthropology and ancient poetry. 
+        <a href="subpages\writing\writing.html" target="_blank">
+            I have short papers on some of these topics here
+        </a>.  
+    </div>
+
+    <!--Coding!-->
+    <div id= "p4" class="parallaxTitle"> 
+    <span id= "codeTitle">
+        I Code!
+    </span> 
+    </div>
+
+    <div  class="description" style="border-style: none;background-color:#0D1117;font-size:20px;color:rgba(210, 210, 210, 0.826); font-family:'Cascadia Code', sans-serif; ">
+        /* I started as a mathematics major, but as I delved deeper into more and more CS classes I feel in love with the direct application 
+       of logic and creation of programs which pure mathematics lacked.*/<br><br>
+       // I have learned and coded in Java for 4+ years<br>
+       // I have done many personal projects in C#<br>
+       // I am a TA for Data Structures and Algorithms<br>
+       // Won a Hackathon for Oridnary Differential Equaltion solution grapher
+    </div>
+
+ 
 </body>
 
 <footer >
