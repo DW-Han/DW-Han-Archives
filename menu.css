@@ -67,7 +67,7 @@
   /* Modal Content */
 .modal-content {
     background-color: #fefefe;
-    font-size: 30px;
+    font-size: 100%;
     margin: auto;
     padding-left: 50px;
     padding-bottom: 70px;
@@ -114,7 +114,7 @@ menu a:hover {
     text-shadow: 2px 2px #ffcf4b;
     border-style: inset;
     color: #f0dca3;
-    font-size: 30px;
+    font-size: 100%;
 }
 menu a:active{
     background-color: rgba(16, 49, 133, 0.813);
