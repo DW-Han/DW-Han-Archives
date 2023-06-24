@@ -6,7 +6,7 @@
 #navMenu{
     height: 22%;
     font-family: "Bubbler One";
-    font-size: 400%;
+    font-size: 5vw;
     margin:2% 0px 0px 0px;
     font-weight: bolder;
     text-align: center;
@@ -14,7 +14,7 @@
 #navMenu span{
     cursor: pointer;
     padding: 10px;
-    width: 200px;
+    width: 5000px;
     border: 5px outset rgb(0, 46, 162);
     color: #f1dac4;
     background-color: rgba(12, 14, 132, 0.872);
@@ -39,8 +39,8 @@
 
 
 #modalText{
-  padding-top: 20px;
-  font-size: 35px;
+  padding-top: 2vw;
+  font-size: 3vw;
   text-align: center;
   font-family:'Josefin Sans';
   text-shadow: 1px 2px 1px #827878;
@@ -52,7 +52,7 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 90px; /* Location of the box */
+    padding-top: 10vw; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -67,18 +67,18 @@
   /* Modal Content */
 .modal-content {
     background-color: #fefefe;
-    font-size: 100%;
+    font-size: 2vw;
     margin: auto;
-    padding-left: 50px;
-    padding-bottom: 70px;
-    width: 90%;
+    padding-left: 2vw;
+    padding-bottom: 4vw;
+    width: 80vw;
   }
   
   /* The Close Button */
 .close {
     color: #767676;
     float: right;
-    font-size: 28px;
+    font-size: 5vw;
     font-weight: bold;
   }
   
@@ -90,18 +90,18 @@
 menu{
     font-family: "Bubbler One";
     font-weight: bolder;
-    font-size:25px;
+    font-size: 5vw;
 }
 menu a:link, menu a:visited {
     text-decoration: none;
     background-color: rgba(15, 58, 169, 0.872);
-    border: 6px outset rgb(10, 88, 191);
+    border: 0.5vw outset rgb(10, 88, 191);
 
     text-shadow: 3px 2px #514628;
     color: #ffe394;
     display:flexbox;
-    padding: 10px;
-    margin: 20px;
+    padding: 1vw;
+    margin: 1vw;
     height: 100px;
     width: 200px;
     text-align: center;
